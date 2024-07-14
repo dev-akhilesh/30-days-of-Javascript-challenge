@@ -9,6 +9,8 @@ console.log('10 >= 5:', num3 >= num4);
 console.log('10 <= 5:', num3 <= num4);
 
 
+
+
 let num1 = 5;
 let num2 = '5';
 
