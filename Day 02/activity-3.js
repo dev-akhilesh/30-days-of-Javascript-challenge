@@ -2,6 +2,7 @@
 
 let num3 = 10;
 let num4 = 5;
+
 console.log('10 > 5:', num3 > num4);
 console.log('10 < 5:', num3 < num4);
 console.log('10 >= 5:', num3 >= num4);
