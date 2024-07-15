@@ -43,8 +43,6 @@ function assignGrade(score) {
             console.log("Grade: F");
     }
 }
-
-
 assignGrade(95);  
 assignGrade(85);  
 assignGrade(50); 
@@ -58,7 +56,6 @@ function isLeapYear(year) {
         console.log(year + " is not a leap year.");
     }
 }
-
 isLeapYear(2020);  
 isLeapYear(1900);  
 isLeapYear(2000);  
