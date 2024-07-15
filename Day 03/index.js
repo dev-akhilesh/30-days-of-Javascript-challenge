@@ -42,9 +42,7 @@ findLargest(10, 10, 10);
 
 
 
-
 // Activity 3: Switch Case
-
 function getDayOfWeek(dayNumber) {
     switch (dayNumber) {
         case 1:
@@ -102,7 +100,6 @@ assignGrade(50);  // Output: Grade: F
 
 
 // Activity 4: Conditional(Ternary) Operator
-
 function checkEvenOdd(num) {
     const result = (num % 2 === 0) ? "The number is even." : "The number is odd.";
     console.log(result);
