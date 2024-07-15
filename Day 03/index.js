@@ -21,14 +21,12 @@ function checkVotingEligibility(age) {
         console.log("The person is not eligible to vote.");
     }
 }
-
 checkVotingEligibility(20);
 checkVotingEligibility(16);
 
 
 
 // Activity 2: Nested If - Else Statements
-
 function findLargest(a, b, c) {
     if (a >= b && a >= c) {
         console.log(a + " is the largest number.");
