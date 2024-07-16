@@ -26,3 +26,16 @@ for (let i = 1; i <= 5; i++) {
     }
     console.log(pattern);
 }
+
+
+
+// Sum Calculation Script
+let sum = 0;
+let i = 1;
+
+while (i <= 10) {
+    sum += i;
+    i++;
+}
+
+console.log("Sum of numbers from 1 to 10 is:", sum);
