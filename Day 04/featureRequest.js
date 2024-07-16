@@ -16,6 +16,9 @@ for (let i = 1; i <= 10; i++) {
     console.log(`5 x ${i} = ${5 * i}`);
 }
 
+
+
+// Pattern Printing Script
 for (let i = 1; i <= 5; i++) {
     let pattern = "";
     for (let j = 1; j <= i; j++) {
