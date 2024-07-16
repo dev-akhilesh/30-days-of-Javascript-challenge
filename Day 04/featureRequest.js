@@ -39,3 +39,20 @@ while (i <= 10) {
 }
 
 console.log("Sum of numbers from 1 to 10 is:", sum);
+
+
+
+// Factorial Calculation Script
+function factorial(n) {
+    let result = 1;
+    let k = n;
+
+    do {
+        result *= k;
+        k--;
+    } while (k > 0);
+
+    return result;
+}
+
+console.log("Factorial of 5 is:", factorial(5));  

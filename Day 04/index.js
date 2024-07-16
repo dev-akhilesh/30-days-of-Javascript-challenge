@@ -26,6 +26,7 @@ while (num >= 1) {
 }
 
 
+
 // Activity 3: Do...While Loop
 let j = 1;
 do {
@@ -44,6 +45,7 @@ function factorial(n) {
     return result
 };
 console.log("Factorial of 5 is:", factorial(10));
+
 
 
 // Activity 4: Nested Loops
