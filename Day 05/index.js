@@ -84,3 +84,43 @@ const double = x => x * 2;
 const addTen = x => x + 10;
 
 console.log(applyFunctions(double, addTen, 5)); // 20 (double 5 to get 10, then add 10 to get 20)
+
+
+
+// Even or Odd Function Script
+function checkEvenOrOdd(number) {
+    if (number % 2 === 0) {
+        console.log(number + ' is even');
+    } else {
+        console.log(number + ' is odd');
+    }
+}
+checkEvenOrOdd(4); // 4 is even
+checkEvenOrOdd(7); // 7 is odd
+
+
+
+// Square Calculation Function Script
+function square(number) {
+    return number * number;
+}
+console.log(square(5)); // 25
+console.log(square(8)); // 64
+
+
+const sum1 = (a, b) => a + b;
+console.log(sum1(5, 7)); // 12
+console.log(sum1(10, 15)); // 25
+
+
+
+function repeat(fn, times) {
+    for (let i = 0; i < times; i++) {
+        fn();
+    }
+}
+repeat(() => console.log('Hello!'), 3);
+// Output:
+// Hello!
+// Hello!
+// Hello!
