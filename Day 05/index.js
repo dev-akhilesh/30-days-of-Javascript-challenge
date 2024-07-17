@@ -45,3 +45,42 @@ console.log(sum(10, 15)); // 25
 const containsCharacter = (str, char) => str.includes(char);
 console.log(containsCharacter('hello', 'e')); // true
 console.log(containsCharacter('world', 'a')); // false
+
+
+
+// Activity 4: Function Parameters and Default Values
+function multiply(a, b = 1) {
+    return a * b;
+}
+console.log(multiply(5, 4)); // 20
+console.log(multiply(7)); // 7 (since b defaults to 1)
+
+
+function greet(name, age = 'unknown') {
+    return `Hello ${name}, you are ${age} years old.`;
+}
+console.log(greet('John', 25)); // Hello John, you are 25 years old.
+console.log(greet('Jane')); // Hello Jane, you are unknown years old.
+
+
+
+// Activity 5: Higher - Order Functions
+function repeat(fn, times) {
+    for (let i = 0; i < times; i++) {
+        fn();
+    }
+}
+repeat(() => console.log('Hello!'), 3);
+// Output:
+// Hello!
+// Hello!
+// Hello!
+
+
+function applyFunctions(fn1, fn2, value) {
+    return fn2(fn1(value));
+}
+const double = x => x * 2;
+const addTen = x => x + 10;
+
+console.log(applyFunctions(double, addTen, 5)); // 20 (double 5 to get 10, then add 10 to get 20)
