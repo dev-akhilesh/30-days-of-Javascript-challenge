@@ -42,6 +42,26 @@ library.books.forEach(book => console.log("Book Title", book.title));
 
 
 
+// Activity 4: The this Keyword
+book.getTitleAndYear = function () {
+    return `${this.title} (${this.year})`;
+};
+console.log(book.getTitleAndYear());
+
+
+
+// Activity 5: Object Iteration
+for (let key in book) {
+    console.log(`${key} : ${book[key]}`);
+}
+
+// Logging all the keys of the book object
+console.log("Keys:", Object.keys(book));
+
+// Logging all the values of the book object
+console.log("Values:", Object.values(book));
+
+
 
 
 
