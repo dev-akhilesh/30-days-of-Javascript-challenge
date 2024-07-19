@@ -40,5 +40,30 @@ library.books.forEach(book => {
 
 
 
+// Object Iteration Script: Demonstrating iterating over an object's properties using for...in loop and Object.keys/Object.values
+let book1 = {
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    year: 1925,
+    getTitleAndAuthor: function () {
+        return `${this.title} by ${this.author}`;
+    },
+    updateYear: function (newYear) {
+        this.year = newYear;
+    },
+    getTitleAndYear: function () {
+        return `${this.title} (${this.year})`;
+    }
+};
+
+for (let prop in book1) {
+    console.log(`${prop}: ${book1[prop]}`);
+}
+
+console.log("Keys:", Object.keys(book1));
+console.log("Values:", Object.values(book1));
+
+
+
 
 
