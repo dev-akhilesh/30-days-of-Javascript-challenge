@@ -35,7 +35,7 @@ let library = {
 console.log(library);
 console.log("Library Name:", library.name);
 library.books.forEach(book => {
-    console.log("Book Title:", book.title);
+    console.log("Book Title:", book.title, ", Year:", book.year);
 });
 
 
