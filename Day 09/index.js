@@ -23,3 +23,5 @@ const element = document.getElementById('removeMe');
 element.parentNode.removeChild(element);
 
 
+const list = document.getElementById('myList');
+list.removeChild(list.lastElementChild);
