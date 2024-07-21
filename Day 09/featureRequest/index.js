@@ -2,11 +2,9 @@
     document.getElementById('myParagraph').textContent = 'New Text Content';
 
 
-
     const newDiv = document.createElement('div');
     newDiv.textContent = 'Hello, I am a new div!';
     document.body.appendChild(newDiv);
-
 
 
     const element = document.getElementById('removeMe');
