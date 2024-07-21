@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+    <style>
+        .myClass {
+            background-color: yellow;
+        }
+    </style>
+  </head>
+  <body>
+    <p id="myParagraph">Original Text</p>
+
+    <div class="myClass">Original Background Color</div>
+  </body>
+
+  <script>
+    document.getElementById("myParagraph").textContent = "Changed Text";
+  </script>
+   <script>
+        document.querySelector('.myClass').style.backgroundColor = 'lightblue';
+    </script>
+</html>
