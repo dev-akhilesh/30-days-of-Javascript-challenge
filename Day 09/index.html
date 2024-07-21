@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Manipulation</title>
     <style>
-        .myClass {
-            background-color: yellow;
-        }
+      .myClass {
+        background-color: yellow;
+      }
     </style>
   </head>
   <body>
     <p id="myParagraph">Original Text</p>
 
     <div class="myClass">Original Background Color</div>
+
+    <ul id="myList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
   </body>
 
-  <script>
-    document.getElementById("myParagraph").textContent = "Changed Text";
-  </script>
-   <script>
-        document.querySelector('.myClass').style.backgroundColor = 'lightblue';
-    </script>
+  <script src="index.js"></script>
 </html>
