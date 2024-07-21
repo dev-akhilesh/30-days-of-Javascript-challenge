@@ -19,5 +19,7 @@ document.getElementById('myList').appendChild(newLi);
 
 
 // Activity 3: Removing Elements
+const element = document.getElementById('removeMe');
+element.parentNode.removeChild(element);
 
 
