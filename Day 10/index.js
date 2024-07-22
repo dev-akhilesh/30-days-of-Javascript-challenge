@@ -34,6 +34,7 @@ document.getElementById('inputField').addEventListener('keyup', function () {
 
 
 
+// Activity 4: Form Events
 
 
 
