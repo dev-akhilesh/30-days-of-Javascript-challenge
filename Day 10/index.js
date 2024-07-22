@@ -4,7 +4,7 @@ document.getElementById("changeTextBtn").addEventListener("click", function () {
 })
 
 
-document.getElementById("toggleImage").addEventListener("dbclick", function () {
+document.getElementById("toggleImage").addEventListener("dblclick", function () {
     this.style.display = this.style.display === "none" ? 'block' : 'none';
 });
 
@@ -66,7 +66,7 @@ document.getElementById('parentElement').addEventListener('click', function (eve
 
 document.getElementById('addChildBtn').addEventListener('click', function () {
     const newChild = document.createElement('div');
-    newChild.textContent = 'Dynamically Added Child';
+    newChild.textContent = 'Dynamically Added Child ' + Math.round(Math.random());
     newChild.classList.add('childElement');
     document.getElementById('parentElement').appendChild(newChild);
 });
