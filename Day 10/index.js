@@ -22,6 +22,18 @@ document.getElementById('hoverElement').addEventListener('mouseout', function ()
 
 
 
+// Activity 3: Keyboard Events
+document.getElementById('inputField').addEventListener('keydown', function (event) {
+    console.log(`Key pressed: ${event.key}`);
+});
+
+
+document.getElementById('inputField').addEventListener('keyup', function () {
+    document.getElementById('displayParagraph').textContent = this.value;
+});
+
+
+
 
 
 
