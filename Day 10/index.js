@@ -35,10 +35,18 @@ document.getElementById('inputField').addEventListener('keyup', function () {
 
 
 // Activity 4: Form Events
+document.getElementById('dataForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+    formData.forEach((value, key) => {
+        console.log(`${key}: ${value}`);
+    });
+});
 
 
-
-
+document.getElementById('dropdown').addEventListener('change', function () {
+    document.getElementById('selectedValue').textContent = `Selected: ${this.value}`;
+});
 
 
 
