@@ -50,3 +50,23 @@ document.getElementById('dropdown').addEventListener('change', function () {
 
 
 
+// Activity 5: Event Delegation
+document.getElementById('itemList').addEventListener('click', function (event) {
+    if (event.target.tagName === 'LI') {
+        console.log(`Clicked item: ${event.target.textContent}`);
+    }
+});
+
+
+document.getElementById('parentElement').addEventListener('click', function (event) {
+    if (event.target.classList.contains('childElement')) {
+        console.log(`Clicked dynamically added element: ${event.target.textContent}`);
+    }
+});
+
+document.getElementById('addChildBtn').addEventListener('click', function () {
+    const newChild = document.createElement('div');
+    newChild.textContent = 'Dynamically Added Child';
+    newChild.classList.add('childElement');
+    document.getElementById('parentElement').appendChild(newChild);
+});
