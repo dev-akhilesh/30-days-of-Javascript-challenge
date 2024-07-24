@@ -84,6 +84,23 @@ try {
 
 
 
+// Activity 4: Error Handling in Promises
+const randomPromise = new Promise((resolve, reject) => {
+    const random = Math.random();
+    if (random > 0.5) {
+        resolve("Promise resolved");
+    }
+    else {
+        reject("Promise rejected");
+    }
+    // random > 0.5 ? resolve("Promise resolved") : reject("Promise rejected");
+});
+
+randomPromise
+    .then(message => console.log(message))
+    .catch(error => console.error("Error: ", error))
+
+
 
 
 
