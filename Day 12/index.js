@@ -113,7 +113,22 @@ handleRandomPromise();
 
 
 
+// Activity 5: Graceful Error Handling in Fetch
+fetch("https://invalid.url")
+    .then(response => response.json())
+    .catch(error => console.error("Fetch error:", error.message));
 
 
+async function fetchData() {
+    try {
+        const response = await fetch("https://invalid.url");
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error("Async fetch error:", error.message);
+    }
+}
+
+fetchData();
 
 
