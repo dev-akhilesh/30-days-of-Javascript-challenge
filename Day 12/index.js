@@ -101,6 +101,16 @@ randomPromise
     .catch(error => console.error("Error: ", error))
 
 
+async function handleRandomPromise() {
+    try {
+        const message = await randomPromise;
+        console.log(message);
+    } catch (error) {
+        console.error("Async error:", error);
+    }
+}
+handleRandomPromise();
+
 
 
 
