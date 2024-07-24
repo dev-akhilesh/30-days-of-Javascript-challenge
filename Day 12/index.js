@@ -43,10 +43,44 @@ executeWithFinally();
 
 
 // Activity 3: Custom Error Objects
+class CustomError extends Error {
+    constructor(message) {
+        super(message);
+        this.name = "CustomError";
+    }
+}
+
+function throwCustomError() {
+    throw new CustomError("This is a custom error");
+}
+
+try {
+    throwCustomError();
+} catch (error) {
+    console.error(`${error.name}: ${error.message}`);
+}
 
 
+class ValidationError extends Error {
+    constructor(message) {
+        super(message);
+        this.name = "Validation Error"
+    }
+}
 
+function validateInput(input) {
+    if (!input) {
+        throw new ValidationError("Input cannot be empty");
+    }
+    console.log(`Validated: ${input}`)
+    return true;
+}
 
+try {
+    validateInput("");
+} catch (error) {
+    console.error(`${error.name}: ${error.message}`);
+}
 
 
 
