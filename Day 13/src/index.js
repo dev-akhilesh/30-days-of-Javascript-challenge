@@ -1,5 +1,3 @@
-// src/index.js
-
 // Task 1
 import add from './add.js';
 console.log(`Add: ${add(3, 4)}`);

@@ -1,4 +1,3 @@
-// src/person.js
 const person = {
     name: 'John Doe',
     age: 30,
