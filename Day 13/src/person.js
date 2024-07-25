@@ -1,9 +1,10 @@
+// src/person.js
 const person = {
-    name:'Akhilesh',
-    age: 24,
+    name: 'John Doe',
+    age: 30,
     greet: function () {
         console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
     }
 };
 
-module.exports = person;
+export default person;
