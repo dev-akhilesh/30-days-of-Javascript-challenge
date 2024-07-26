@@ -39,15 +39,3 @@ console.log(student1.getStudentId()); // Output: S12345
 console.log(student1.greeting()); // Output: Hello, my name is Jane Doe, I am 20 years old, and my student ID is S12345.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
