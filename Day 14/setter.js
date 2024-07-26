@@ -1,3 +1,5 @@
+// Add a setter method to the Person class to update the name properties(firstName and lastName).Update the name using the setter and log the updated full name.
+
 class Person {
     constructor(firstName, lastName, age) {
         this.firstName = firstName;

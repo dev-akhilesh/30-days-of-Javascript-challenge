@@ -1,5 +1,7 @@
 
 // Activity 3: Static Methods and Properties
+//  Add a static method to the Person class that returns a generic greeting message.Call this static method without creating an instance of the class and log the message.
+
 class Person {
     constructor(name, age) {
         this.name = name;
@@ -24,6 +26,8 @@ console.log(Person.genericGreeting()); // Output: Hello, this is a generic greet
 
 
 
+
+// Add a static property to the Student class to keep track of the number of students created.Increment this property in the constructor and log the total number of students.
 class Student extends Person {
     static studentCount = 0;
 
